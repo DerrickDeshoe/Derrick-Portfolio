@@ -16,3 +16,7 @@
     font-family: nunitoBold;
     src: url(../app/fonts/NunitoSans-ExtraBold.ttf);
 }
+
+.header{
+    z-index: 100
+}

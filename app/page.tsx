@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       <div className="hidden lg:flex lg:flex-col justify-between items-center lg:justify-between lg:items-start space-y-10 z-10">
         <div className="flex relative justify-center mb-8 lg:mb-0">
-          <h1 className="text-white hover:text-gray text-2xl lg:text-5xl xl:text-6xl w-[100%] lg:w-[100%] font-light leading-tight">
+          <h1 className="text-lightGray hover:text-hoverGray text-2xl lg:text-5xl xl:text-6xl w-[100%] lg:w-[100%] font-light leading-tight">
             Transforming Visions Into
           </h1>
           <div className="flex space-x-3 absolute top-[33px] left-[5px] lg:top-[120%] lg:left-[0%] w-[100%]">

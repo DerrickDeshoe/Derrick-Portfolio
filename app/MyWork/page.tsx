@@ -19,19 +19,19 @@ const Page = () => {  // Changed 'page' to 'Page'
       image: Gamer,
       description:
         "Gamer Paradise is a dynamic website designed for gaming enthusiasts. It offers a rich collection of game reviews, news, and guides, delivering a comprehensive gaming experience. The site features an engaging, interactive design, providing users with the latest updates from the gaming world.",
-      link: 'https://vercel.live/link/gamer-paradise-4i51.vercel.app/?via=team-dashboard-project-entity&p=1'
+      link: 'https://vercel.live/link/gamer-paradise-4i51.vercel.app'
+    },
+    {
+      image: Gamer,
+      description:
+        "Vanlife is a travel website offering a wide range of van options to suit your travel needs. From two-seater vans for couples to spacious family vans, it's designed to provide the perfect vehicle for vacations or global adventures, ensuring comfort and convenience for every journey.",
+      link: 'https://van-life-complete.vercel.app/'
     },
     {
       image: Travel,
       description:
         "Travel Buddy is a user-friendly travel website offering curated recommendations for top places to visit, along with various travel-related services. It helps users explore destinations, discover hidden gems and plan their trips efficiently, providing a seamless travel experience for adventurers",
-      link: 'https://vercel.live/link/travelguide-seven.vercel.app/?via=team-dashboard-project-entity&p=1'
-    },
-    {
-      image: Travel,
-      description:
-        "Travel Buddy is a user-friendly travel website offering curated recommendations for top places to visit, along with various travel-related services. It helps users explore destinations, discover hidden gems and plan their trips efficiently, providing a seamless travel experience for adventurers",
-      link: 'https://vercel.live/link/travelguide-seven.vercel.app/?via=team-dashboard-project-entity&p=1'
+      link: 'https://vercel.live/link/travelguide-seven.vercel.app'
     },
   ];
 

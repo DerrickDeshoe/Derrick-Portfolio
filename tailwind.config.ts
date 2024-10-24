@@ -37,7 +37,7 @@ const config: Config = {
         red: "#C30004",
         overlay: "#050814",
         lightGray: '#D9D9D9',
-        hoverGray: '#ACA5A5'
+        hoverGray: '#ACA5A5',
       },
 
       fontFamily:{
