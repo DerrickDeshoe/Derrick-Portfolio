@@ -1,12 +1,6 @@
+"use client";
 
-"use client"
-
-import {
-  HiHome,
-  HiUser,
-  HiViewColumns,
-  HiEnvelope,
-} from "react-icons/hi2";
+import { HiHome, HiUser, HiViewColumns, HiEnvelope } from "react-icons/hi2";
 
 // nav data
 export const navData = [
@@ -22,11 +16,19 @@ export const navData = [
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="flex flex-col items-center lg:justify-center gap-y-5 fixed h-max bottom-0 mt-auto lg:right-[2%] z-50 top-0 w-full lg:w-16 lg:max-w-md lg:h-screen ">
+    <motion.nav
+      variants={fadeIn("left", 3)}
+      initial="hidden"
+      animate="show"
+      exit="hidden"
+      className="flex flex-col items-center lg:justify-center gap-y-5 fixed h-max bottom-0 mt-auto lg:right-[2%] z-50 top-0 w-full lg:w-16 lg:max-w-md lg:h-screen "
+    >
       {/* inner */}
       <div className="flex w-full lg:w-[70%] lg:flex-col items-center justify-evenly lg:justify-center gap-y-10 px-2 md:px-40 lg:px-0 h-[40px] bg-gray bg-blur-md lg:h-max py-6 text-[15px] lg:text-[18px] lg:rounded-3xl text-white ">
         {navData.map((link, index) => {
@@ -53,7 +55,7 @@ const Nav = () => {
           );
         })}
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

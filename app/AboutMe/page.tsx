@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -10,6 +10,13 @@ import Skills from "../../public/images/about me/Skills.svg";
 import WhiteSkills from "../../public/images/about me/SkillsWhite.svg";
 import LearningWhite from "../../public/images/about me/LearningWhite.svg";
 import PhilosophyWhite from "../../public/images/about me/PhilosophyWhite.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+
+const variant = {
+  hidden: { filter: "blur(10px)", opacity: 0 },
+  visible: { filter: "blur(0px)", opacity: 1 },
+};
 
 const Page = () => {
   // State to track the current slide
@@ -34,8 +41,7 @@ const Page = () => {
     {
       heading: "My Skills",
       image: Skills,
-      description:
-        `
+      description: `
         Bootstrap&Tailwind : Utilizing responsive frameworks for efficient and aesthetic design.
         JavaScript : Building interactive and dynamic web applications.
         React&Next.js : Developing high-performance user interfaces and server-rendered applications.`,
@@ -61,22 +67,40 @@ const Page = () => {
 
       <div className=" z-10 flex flex-col justify-between mt-10 items-center w-full lg:w-[80%] px-5 lg:px-0 space-y-5 lg:space-y-3 lg:space-x-10 lg:items-start lg:mt-[8%]">
         {/* Image on the left */}
-        <div className="w-[60%] lg:w-[25%] absolute top-[12%] md:top-[9%] lg:top-[10%] lg:left-0">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 3.5 }}
+          variants={variant}
+          className="w-[60%] lg:w-[25%] absolute top-[12%] md:top-[9%] lg:top-[10%] lg:left-0"
+        >
           <Image src={About} alt="image" />
-        </div>
+        </motion.div>
 
         {/* Slider content */}
-        <div className="w-full lg:w-[50%] text-center lg:text-left lg:flex lg:flex-col">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 3.5 }}
+          variants={variant}
+          className="w-full lg:w-[50%] text-center lg:text-left lg:flex lg:flex-col"
+        >
           <AboutMe
             heading={slides[currentIndex].heading}
             image={slides[currentIndex].image}
             description={slides[currentIndex].description}
             image2={slides[currentIndex].image2}
           />
-        </div>
+        </motion.div>
 
         {/* Slider Controls */}
-        <div className="flex justify-center w-full lg:w-[50%] space-x-5 ">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 3.5 }}
+          variants={variant}
+          className="flex justify-center w-full lg:w-[50%] space-x-5 "
+        >
           <button
             onClick={prevSlide}
             className="bg-gray hover:bg-red text-white py-2 px-4 rounded-lg text-xs"
@@ -89,7 +113,7 @@ const Page = () => {
           >
             Next
           </button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

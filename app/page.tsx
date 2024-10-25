@@ -4,14 +4,33 @@ import Image from "next/image";
 import Hero from "../public/images/herro.svg";
 import React from "react";
 import Button from "./Components/Button";
+import { MotionMain, MotionDiv, MotionPara } from "./framer";
+
+const variant = {
+  hidden: { filter: "blur(10px)", opacity: 0 },
+  visible: { filter: "blur(0px)", opacity: 1 },
+};
 
 export default function Home() {
   return (
     <div className=" lg:bg-grayishBlack h-[100vh] relative lg:px-10 flex flex-col items-center justify-center lg:items-start">
-      <div className="hidden lg:flex lg:w-[70%] xl:w-[60%] absolute bottom-0 right-0">
+      <MotionDiv
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 4 }}
+        variants={variant}
+        className="hidden lg:flex lg:w-[70%] xl:w-[60%] absolute bottom-0 right-0"
+      >
         <Image src={Hero} alt="image" />
-      </div>
-      <div className="hidden lg:flex lg:flex-col justify-between items-center lg:justify-between lg:items-start space-y-10 z-10">
+      </MotionDiv>
+
+      <MotionDiv
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 4 }}
+        variants={variant}
+        className="hidden lg:flex lg:flex-col justify-between items-center lg:justify-between lg:items-start space-y-10 z-10"
+      >
         <div className="flex relative justify-center mb-8 lg:mb-0">
           <h1 className="text-lightGray hover:text-hoverGray text-2xl lg:text-5xl xl:text-6xl w-[100%] lg:w-[100%] font-light leading-tight">
             Transforming Visions Into
@@ -33,7 +52,7 @@ export default function Home() {
             and turn your vision into something extraordinary!
           </p>
         </div>
-      </div>
+      </MotionDiv>
       <div className="hidden lg:flex mt-20 lg:mt-15 lg:ml-[5%]">
         <Button />
       </div>

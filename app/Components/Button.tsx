@@ -1,11 +1,21 @@
-
-
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const variant = {
+  hidden: { filter: "blur(10px)", opacity: 0 },
+  visible: { filter: "blur(0px)", opacity: 1 },
+};
 
 const Button = () => {
   return (
-    <div className="relative flex justify-center items-center">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.5, delay: 4 }}
+      variants={variant}
+      className="relative flex justify-center items-center"
+    >
       {/* Outer Circle 2 */}
       <div className="absolute w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] rounded-full border-4 border-red animate-growCircle delay-150"></div>
 
@@ -18,7 +28,7 @@ const Button = () => {
           <p className="text-sm">Resumé</p>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
