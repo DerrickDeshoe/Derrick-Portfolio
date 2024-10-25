@@ -4,7 +4,7 @@ import Image from "next/image";
 import Hero from "../public/images/herro.svg";
 import React from "react";
 import Button from "./Components/Button";
-import { MotionMain, MotionDiv, MotionPara } from "./framer";
+import { MotionDiv } from "./framer";
 
 const variant = {
   hidden: { filter: "blur(10px)", opacity: 0 },

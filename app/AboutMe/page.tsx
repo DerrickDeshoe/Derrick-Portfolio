@@ -11,7 +11,7 @@ import WhiteSkills from "../../public/images/about me/SkillsWhite.svg";
 import LearningWhite from "../../public/images/about me/LearningWhite.svg";
 import PhilosophyWhite from "../../public/images/about me/PhilosophyWhite.svg";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+
 
 const variant = {
   hidden: { filter: "blur(10px)", opacity: 0 },

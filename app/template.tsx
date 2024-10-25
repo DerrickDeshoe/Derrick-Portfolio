@@ -13,13 +13,13 @@ const Template = ({ children }: { children: React.ReactNode }) => {
         transition={{
           x: { duration: 2, ease: "easeInOut" }, // First, slow slide from left to center (2 seconds)
           rotateY: { duration: 2, ease: "easeInOut" }, // Rotate together with X-axis animation
-          scaleY: { duration: 2, ease: "easeOut", delay: 2 }, // Scale Y-axis after X-axis animation finishes
+          scaleY: { duration: 2, ease: "easeOut", delay: 2 }, 
         }}
         style={{
          
           justifyContent: "center",
           alignItems: "center",
-          height: "100vh", // Full height to ensure centering
+          height: "100vh", 
         }}
       >
         {children}

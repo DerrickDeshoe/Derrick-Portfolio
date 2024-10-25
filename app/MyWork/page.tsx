@@ -9,7 +9,7 @@ import Travel from "../../public/images/my work/Travel.png";
 import { RxDoubleArrowLeft } from "react-icons/rx";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+
 
 const variant = {
   hidden: { filter: "blur(10px)", opacity: 0 },
