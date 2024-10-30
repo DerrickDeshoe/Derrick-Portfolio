@@ -6,6 +6,7 @@ import MyWork from "../../public/images/myWorkImage.svg";
 import Projects from "../Components/Projects";
 import Gamer from "../../public/images/my work/GamerPic.png";
 import Travel from "../../public/images/my work/Travel.png";
+import Vanlife from '../../public/images/my work/VanLife.png'
 import { RxDoubleArrowLeft } from "react-icons/rx";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { motion } from "framer-motion";
@@ -30,7 +31,7 @@ const Page = () => {
       link: "https://vercel.live/link/gamer-paradise-4i51.vercel.app",
     },
     {
-      image: Gamer,
+      image: Vanlife,
       description:
         "Vanlife is a travel website offering a wide range of van options to suit your travel needs. From two-seater vans for couples to spacious family vans, it's designed to provide the perfect vehicle for vacations or global adventures, ensuring comfort and convenience for every journey.",
       link: "https://van-life-complete.vercel.app/",
@@ -56,7 +57,7 @@ const Page = () => {
   };
 
   return (
-    <div className="bg-work h-[100vh] relative text-white">
+    <div className="bg-work2 h-[100vh] relative text-white">
       {/* Background overlay */}
       <div className="absolute top-0 w-full h-full bg-black bg-opacity-50"></div>
 

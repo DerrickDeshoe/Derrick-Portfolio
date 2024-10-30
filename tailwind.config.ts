@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -28,6 +29,7 @@ const config: Config = {
         hero: "url('../public/images/herro.svg')",
         about: "url('../public/images/about me/aboutmebackground.svg')",
         work: "url('../public/images/Myworkbackground.svg')",
+        work2: "url('../public/images/myWorkBack.svg')",
         contact: "url('../public/images/ContactImage.svg')",
        
       },
