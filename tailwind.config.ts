@@ -30,7 +30,7 @@ const config: Config = {
         about: "url('../public/images/about me/aboutmebackground.svg')",
         work: "url('../public/images/Myworkbackground.svg')",
         work2: "url('../public/images/myWorkBack.svg')",
-        contact: "url('../public/images/ContactImage.svg')",
+        contact: "url('../public/images/myWorkBack.svg')",
        
       },
       colors: {

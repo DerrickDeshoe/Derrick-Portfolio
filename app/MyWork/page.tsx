@@ -28,7 +28,7 @@ const Page = () => {
       image: Gamer,
       description:
         "Gamer Paradise is a dynamic website designed for gaming enthusiasts. It offers a rich collection of game reviews, news, and guides, delivering a comprehensive gaming experience. The site features an engaging, interactive design, providing users with the latest updates from the gaming world.",
-      link: "https://vercel.live/link/gamer-paradise-4i51.vercel.app",
+      link: "https://gamer-paradise-4i51.vercel.app/",
     },
     {
       image: Vanlife,
@@ -39,8 +39,8 @@ const Page = () => {
     {
       image: Travel,
       description:
-        "Travel Buddy is a user-friendly travel website offering curated recommendations for top places to visit, along with various travel-related services. It helps users explore destinations, discover hidden gems and plan their trips efficiently, providing a seamless travel experience for adventurers",
-      link: "https://vercel.live/link/travelguide-seven.vercel.app",
+        "Travel Buddy, a user-friendly travel website offering curated recommendations for top places to visit, along with various travel-related services. It helps users explore destinations, discover hidden gems and plan their trips efficiently, providing a seamless travel experience for adventurers",
+      link: "https://travelguide-seven.vercel.app/",
     },
   ];
 
@@ -57,7 +57,7 @@ const Page = () => {
   };
 
   return (
-    <div className="bg-work2 h-[100vh] relative text-white">
+    <div className="bg-work h-[100vh] relative text-white">
       {/* Background overlay */}
       <div className="absolute top-0 w-full h-full bg-black bg-opacity-50"></div>
 

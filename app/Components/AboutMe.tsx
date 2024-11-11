@@ -11,7 +11,7 @@ interface AboutMe {
 const AboutMe = (props: AboutMe) => {
   return (
     <div className="flex flex-col space-y-3 text-white md:items-center lg:items-start ">
-      <div className="flex space-x-3 items-center lg:w-[60%]">
+      <div className="flex space-x-3 items-center lg:w-[80%] xl:w-[60%]">
         <h3 className=" font-port text-[20px] md:text-[25px] ">{props.heading}</h3>
         <Image src={props.image} alt="image" className="w-[10%] md:w-[11%] lg:w-[12%]" />
       </div>
