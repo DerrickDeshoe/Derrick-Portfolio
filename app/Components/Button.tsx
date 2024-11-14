@@ -7,6 +7,8 @@ const variant = {
   visible: { filter: "blur(0px)", opacity: 1 },
 };
 
+
+
 const Button = () => {
   return (
     <motion.div
@@ -24,7 +26,7 @@ const Button = () => {
 
       {/* Button (smallest size) */}
       <div className="relative bg-red text-white font-semibold py-[28px] px-[40px] xl:py-[25px] xl:px-[35px] rounded-full w-[60px] xl:w-[70px] flex justify-center lg:mt-[3px] tracking-wide z-10 animate-distressSignal">
-        <Link href="#">
+        <Link href="../../public/images/Derrick.pdf">
           <p className="text-sm">Resumé</p>
         </Link>
       </div>
