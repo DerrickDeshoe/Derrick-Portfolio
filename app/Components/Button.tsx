@@ -26,7 +26,7 @@ const Button = () => {
 
       {/* Button (smallest size) */}
       <div className="relative bg-red text-white font-semibold py-[28px] px-[40px] xl:py-[25px] xl:px-[35px] rounded-full w-[60px] xl:w-[70px] flex justify-center lg:mt-[3px] tracking-wide z-10 animate-distressSignal">
-        <Link href="../../public/images/Derrick.pdf">
+        <Link href="https://drive.google.com/file/d/1Sxppclpi1KHSwM9J3z7BiBYaJtPcNQla/view?usp=drive_link">
           <p className="text-sm">Resumé</p>
         </Link>
       </div>
